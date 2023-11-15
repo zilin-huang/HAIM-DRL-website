@@ -135,3 +135,19 @@ body {
 
 
 
+/* Set the width of the carousel container to be wider */
+.results-carousel {
+  max-width: 100%; /* Ensure the carousel takes the full width of its container */
+}
+
+/* Update the item class to control the spacing around the iframe */
+.results-carousel .item {
+  padding: 5px; /* Reduce padding to allow for a larger video */
+  flex: 1 0 auto; /* Flex grow, flex shrink, flex basis */
+}
+
+/* Set the iframe to take up more of the item space */
+.results-carousel .item iframe {
+  width: 100%; /* Full width of the item container */
+  height: 600px; /* Set a fixed height, or use a percentage like 70vh for 70% of the viewport height */
+}
