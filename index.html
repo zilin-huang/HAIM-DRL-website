@@ -145,7 +145,7 @@
       <!-- Adjusted YouTube video embed to match the style of the other YouTube video section -->
       <iframe width="100%" height="600" src="https://www.youtube.com/embed/nf7CTmIysDU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        After almost 65 minutes (30K steps) of training, the AV agent learns how to drive safely and efficiency.     
       </h2>
     </div>
   </div>
@@ -162,7 +162,8 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>Despite significant progress in autonomous driving, the formulation of a driving policy that ensures the safety and traffic efficiency of autonomous vehicles (AVs) has not yet been fully explored. By integrating the strengths of the transportation and robotics communities, this paper presents an enhanced deep reinforcement learning (DRL) method, which facilitates safe and efficient autonomous driving in mixed traffic platoons. Drawing inspiration from the human learning process, we first introduce an innovative learning paradigm that effectively injects human intelligence into artificial intelligence (AI), which is termed <strong>human-AI mentor paradigm (HAMP)</strong>. A distinctive feature of HAMP is that the human subject serves as a mentor to the AI agent, supervising, intervening, and demonstrating in its learning process. 
+          <p>
+            Despite significant progress in autonomous driving, the formulation of a driving policy that ensures the safety and traffic efficiency of autonomous vehicles (AVs) has not yet been fully explored. By integrating the strengths of the transportation and robotics communities, this paper presents an enhanced deep reinforcement learning (DRL) method, which facilitates safe and efficient autonomous driving in mixed traffic platoons. Drawing inspiration from the human learning process, we first introduce an innovative learning paradigm that effectively injects human intelligence into artificial intelligence (AI), which is termed <strong>human-AI mentor paradigm (HAMP)</strong>. A distinctive feature of HAMP is that the human subject serves as a mentor to the AI agent, supervising, intervening, and demonstrating in its learning process. 
             <br>
             <br>
             Building upon this concept, we propose a HAMP-based DRL framework, named <strong>HAMP-DRL</strong>, which ensures the safety of the AV itself while reducing traffic disturbance, thereby optimizing traffic efficiency. In particular, in the HAMP-DRL, we circumvent the complex task of manually crafting a reward function, a common challenge in traditional DRL. Instead, we directly utilize human intervention signals to guide the agent's policy learning. Additionally, we incorporate a technique to minimize intervention, reducing the human mentor's workload. <strong>Comparative results indicate that HAMP-DRL outperforms traditional methods in driving safety, sampling efficiency, traffic disturbance mitigation, and generalizability to unseen traffic environments</strong>.
@@ -186,7 +187,8 @@
         <!-- Your image here with adjusted width -->
         <img src="static/images/paper-flow.jpg" alt="Descriptive Alt Text" style="width: 100%; height: auto;"/>
         <h2 class="subtitle" style="font-size: medium; text-align: justify;"> <!-- Adjusted font size and alignment -->
-          Overview of our proposed human intervention-based DRL framework. (a) The 'X+1+N' mixed traffic platoon scenario is a novel concept uniting the transportation and robotics domains. This scenario is characterized by a combination of HVs and an AV, navigating through a dynamic and uncertain traffic environment. (b) The HAMP is an innovative learning paradigm that infuses human intelligence into the fabric of AI, enhancing the learning capabilities of AI agents. The framework further integrates HAMP into the training loop of RL. Additionally, the framework can be seamlessly embedded into the MetaDrive/CARLA driving environment for testing.
+          Overview of our proposed human intervention-based DRL framework. 
+          <!-- (a) The 'X+1+N' mixed traffic platoon scenario is a novel concept uniting the transportation and robotics domains. This scenario is characterized by a combination of HVs and an AV, navigating through a dynamic and uncertain traffic environment. (b) The HAMP is an innovative learning paradigm that infuses human intelligence into the fabric of AI, enhancing the learning capabilities of AI agents. The framework further integrates HAMP into the training loop of RL. Additionally, the framework can be seamlessly embedded into the MetaDrive/CARLA driving environment for testing. -->
         </h2>
       </div>
     </div>
@@ -203,7 +205,7 @@
         <!-- Your image here with adjusted width -->
         <img src="static/images/Human-AI Mentor Paradigm.jpg" alt="Descriptive Alt Text" style="width: 100%; height: auto;"/>
         <h2 class="subtitle" style="font-size: medium; text-align: justify;"> <!-- Adjusted font size and alignment -->
-          In traditional RL paradigm, as shown in (a), it heavily relies on exploration through trials and errors, which requires significant training time and inevitably puts the agent in dangerous situations. On the other hand, passive human involvement, as depicted in (b), merely provides suggestions about which actions are appropriate or evaluates collected trajectories. While it helps to shorten the training time, it still exposes the agent to potential hazards. When observing the human learning process in daily life, especially in acquiring practical skills, one notices that it does not rely solely on trial and error. Instead, people often employ explicit and implicit interventions to improve learning efficiency and ensure the safety of the learning process. As an illustration, consider the driving school scenario depicted in (c).       
+          <!-- In traditional RL paradigm, as shown in (a), it heavily relies on exploration through trials and errors, which requires significant training time and inevitably puts the agent in dangerous situations. On the other hand, passive human involvement, as depicted in (b), merely provides suggestions about which actions are appropriate or evaluates collected trajectories. While it helps to shorten the training time, it still exposes the agent to potential hazards. When observing the human learning process in daily life, especially in acquiring practical skills, one notices that it does not rely solely on trial and error. Instead, people often employ explicit and implicit interventions to improve learning efficiency and ensure the safety of the learning process. As an illustration, consider the driving school scenario depicted in (c).        -->
         </h2>
       </div>
     </div>
@@ -220,7 +222,7 @@
         <!-- Your image here with adjusted width -->
         <img src="static/images/mechanism.jpg" alt="Descriptive Alt Text" style="width: 100%; height: auto;"/>
         <h2 class="subtitle" style="font-size: medium; text-align: justify;"> <!-- Adjusted font size and alignment -->
-          Explicit intervention and implicit intervention mechanism in HAMP. (a) The former involves humans actively taking direct control of the AV agent, guiding it through correct behaviors in hazardous scenarios. (b) The latter involves penalizing the agent for actions that disrupt traffic, indirectly indicating that it should avoid such actions in the future.     
+          <!-- Explicit intervention and implicit intervention mechanism in HAMP. (a) The former involves humans actively taking direct control of the AV agent, guiding it through correct behaviors in hazardous scenarios. (b) The latter involves penalizing the agent for actions that disrupt traffic, indirectly indicating that it should avoid such actions in the future.      -->
         </h2>
       </div>
     </div>
@@ -238,7 +240,7 @@
         <!-- Your image here with adjusted width -->
         <img src="static/images/HAMP-DRL.jpg" alt="Descriptive Alt Text" style="width: 100%; height: auto;"/>
         <h2 class="subtitle" style="font-size: medium; text-align: justify;"> <!-- Adjusted font size and alignment -->
-          Schematic of the HAMP-DRL framework for driving policy learning. We first delineate the observation space of our HAMP-DRL framework, which is designed to accommodate two distinct types of sensory inputs: (i) The first type pertains to numerical observation spaces that encompass data such as current vehicular states, navigation information, and surrounding information encoded by LiDAR. (ii) The second type addresses visual observation spaces, which include image inputs from mounted cameras. Specifically, we employ a convolutional neural network (CNN) to extract feature vectors, which are then combined with velocity. Then, we introduce a reward-free policy learning method that explicitly conveys human intentions to the learning policy through human intervention. To encourage agent exploration in the permissible state-action space, we maximize the entropy of the agent's action distribution if the agent is not subject to takeover. Simultaneously, we implement measures to minimize takeover and disturbance costs. 
+          <!-- Schematic of the HAMP-DRL framework for driving policy learning. We first delineate the observation space of our HAMP-DRL framework, which is designed to accommodate two distinct types of sensory inputs: (i) The first type pertains to numerical observation spaces that encompass data such as current vehicular states, navigation information, and surrounding information encoded by LiDAR. (ii) The second type addresses visual observation spaces, which include image inputs from mounted cameras. Specifically, we employ a convolutional neural network (CNN) to extract feature vectors, which are then combined with velocity. Then, we introduce a reward-free policy learning method that explicitly conveys human intentions to the learning policy through human intervention. To encourage agent exploration in the permissible state-action space, we maximize the entropy of the agent's action distribution if the agent is not subject to takeover. Simultaneously, we implement measures to minimize takeover and disturbance costs.  -->
         </h2>
       </div>
     </div>
@@ -258,11 +260,12 @@
         <!-- Your image here with adjusted width -->
         <img src="static/images/experiment results.png" alt="Descriptive Alt Text" style="width: 100%; height: auto;"/>
         <h2 class="subtitle" style="font-size: medium; text-align: justify;"> <!-- Adjusted font size and alignment -->
-          <p>Specifically, we are most interested in four aspects of performance: 
+          <!-- <p>Specifically, we are most interested in four aspects of performance: 
             (a) <strong>safety</strong>, which includes avoiding obstacles during both the training and testing phases, as well as ensuring the AV reaches its destination; 
             (b) <strong>generalization ability</strong>, evaluating the agents on new maps not encountered during training to verify their ability to navigate safely in new environments; 
             (c) <strong>sampling efficiency</strong>, the time required for the method to demonstrate satisfactory performance; and 
-            (d) <strong>minimizing traffic flow disturbance</strong>, which aims to enhance traffic efficiency.</p>
+            (d) <strong>minimizing traffic flow disturbance</strong>, which aims to enhance traffic efficiency.
+          </p> -->
         </h2>
       </div>
     </div>
