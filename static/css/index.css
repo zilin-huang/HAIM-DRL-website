@@ -151,3 +151,8 @@ body {
   width: 100%; /* Full width of the item container */
   height: 600px; /* Set a fixed height, or use a percentage like 70vh for 70% of the viewport height */
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
